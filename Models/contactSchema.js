@@ -1,10 +1,9 @@
 const mongoose = require ("mongoose")
 const contactSchema = mongoose.Schema(
     {
-        name: String ,
-        email: {type:String , require:true },
-        password : {type:String , require: true},
-        address : String
+        name: {type:String , require:true } ,
+        age: { type: Number },
+        favoriteFoods: { type: [String], required: true }
 
     }
 )
