@@ -7,7 +7,7 @@ const app = express()
 app.use(express.json())
 app.use("/api", require("./Routes/contactRoutes"))
 
-mongoose.connect("mongodb+srv://maliou:maliou1@cluster0.kntrv0u.mongodb.net/Project0?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect("mongodb+srv://maliou:maliou@cluster0.kntrv0u.mongodb.net/Project0?retryWrites=true&w=majority&appName=Cluster0")
 .then(()=> console.log("DataBase Connected"))
 .catch((err)=>console.error(err)) 
 
